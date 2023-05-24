@@ -1,0 +1,32 @@
+#container{
+    display:flex;
+    align-content: center;
+   /* content: center;  */
+   padding:0px;
+   margin-left: 90px;
+   box-shadow: #c50404;
+}
+#color{
+    background-color:#80b5ad ;
+    
+
+}
+#btn{
+border-style:hidden;
+color: #040301;
+background-color: #FFC312;
+}
+#btn:hover{
+    color: #021110;
+    background-color:#1b7670;
+}
+#box{
+    background-color: #021110;
+  
+}
+#textc{
+    color:whitesmoke;
+}
+.container{
+    box-shadow:    10px 15px 25px rgb(98, 12, 184);
+}

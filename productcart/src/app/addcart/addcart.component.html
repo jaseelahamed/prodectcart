@@ -1,0 +1,52 @@
+<!-- <div class="container">
+<div >
+    <h1>Order Details</h1>
+    <div *ngFor="let product of products">
+      <div>
+        <label>{{ product.name }}</label>
+        <input type="number" [(ngModel)]="product.quantity" (ngModelChange)="calculateOrder()">
+        <p>Total price: {{ product.price * product.quantity }}</p>
+      </div>
+    </div>
+  
+    <p>Subtotal: {{ orderDetails.cartTotal }}</p>
+    <p>Discount: {{ orderDetails.discountName }} - Amount: {{ orderDetails.discountAmount }}</p>
+    <p>Shipping Fee: {{ orderDetails.shippingFee }}</p>
+    <p>Gift Wrap Fee: {{ orderDetails.giftWrapFee }}</p>
+    <h3>Total: {{ orderDetails.total }}</h3>
+  </div>
+</div> -->
+<section  id="color"class="p-4 p-md-5" style=>
+  <div class="container" class="row d-flex justify-content-center">
+    <div  class="col-md-10 col-lg-8 col-xl-5">
+      <div id="box" class="card rounded-3">
+        <div id="shad" class="card-body p-4">
+          <div class="text-center mb-4">
+            <h1 id="textc">Order Details</h1>
+            <h6 id="textc">Cart</h6>
+          </div>
+          <!-- <form [formGroup]="pform" (ngSubmit)="clicked()"> -->
+            <div>
+             
+              <div *ngFor="let product of products">
+                <div>
+                  <label id="textc">{{ product.name }}</label>
+                  <input type="number" [(ngModel)]="product.quantity" (ngModelChange)="calculateOrder()">
+                  <p id="textc">Total: {{ product.price * product.quantity }}</p>
+                </div>
+              </div>
+            
+              <p id="textc">Subtotal: {{ orderDetails.cartTotal }}</p>
+              <p id="textc">Discount: {{ orderDetails.discountName }} - Amount: {{ orderDetails.discountAmount }}</p>
+              <p id="textc">Shipping Fee: {{ orderDetails.shippingFee }}</p>
+              <p id="textc">Gift Wrap Fee: {{ orderDetails.giftWrapFee }}</p>
+              <h3 id="textc">Total: {{ orderDetails.total }}</h3>
+            </div>
+
+            <button  id="btn" class="btn btn-dark btn-lg btn-block">BUY NOW</button>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
